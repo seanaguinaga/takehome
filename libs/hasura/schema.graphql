@@ -1,0 +1,9 @@
+schema {
+  query: query_root
+  subscription: subscription_root
+}
+
+type query_root
+
+type subscription_root
+

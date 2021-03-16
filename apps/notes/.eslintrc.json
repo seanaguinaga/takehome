@@ -1,0 +1,44 @@
+{
+  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/notes/tsconfig(.*)?.json"]
+      },
+      "rules": {
+        // We will use TypeScript's types for component props instead
+        "react/prop-types": "off",
+
+        "react/display-name": "off",
+
+        // No need to import React when using Next.js
+        "react/react-in-jsx-scope": "off",
+
+        // This rule is not compatible with Next.js's <Link /> components
+        "jsx-a11y/anchor-is-valid": "off",
+
+        // Why would you want unused vars?
+        "@typescript-eslint/no-unused-vars": ["error"],
+
+        "no-unused-vars": "off",
+        "prefer-let/prefer-let": "error",
+        "prefer-const": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "react/no-unescaped-entities": ["off"],
+
+        // I suggest this setting for requiring return types on functions only where useful
+        "@typescript-eslint/explicit-function-return-type": ["off"]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}
