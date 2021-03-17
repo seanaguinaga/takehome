@@ -1,0 +1,154 @@
+p {
+  font-size: 16px !important;
+}
+
+ion-tabs .header-md:after {
+  left: 0;
+  bottom: 0;
+  background-position: 0;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-image: none;
+  background-repeat: repeat-x;
+}
+
+ion-menu {
+  /* border-right: 0 !important; */
+  border-left: 0 !important;
+}
+
+ion-page ion-toolbar {
+  /* background: var(--ion-background-color); */
+}
+
+ion-menu ion-content {
+  border-inline-start: var(--border);
+}
+
+ion-menu::-webkit-scrollbar {
+  display: none;
+}
+
+iframe {
+  border: 0;
+}
+
+@media screen and (min-width: 992px) {
+  ion-tab-bar {
+    /* border: 0; */
+    /* height: 44px; */
+  }
+}
+
+ion-header {
+  /* border-bottom: 1 !important; */
+}
+
+ion-list {
+  background: none !important;
+}
+
+ion-split-pane {
+  /* --border: 1px solid black; */
+}
+
+.header-ios ion-toolbar:last-child {
+  /* --border-width: 0; */
+}
+
+.item-native .item-inner {
+  /* border: none !important; */
+}
+
+button,
+[type="submit"] {
+  -webkit-appearance: none !important;
+}
+
+ion-toolbar.sc-ion-searchbar-ios-h,
+ion-toolbar .sc-ion-searchbar-ios-h {
+  padding: 0;
+  padding-left: 16px;
+}
+
+/* // START RAIL */
+
+.large-split-pane ion-item {
+  --background-hover: var(--ion-color-primary, #3880ff);
+  --ripple-color: var(--ion-color-primary, #3880ff);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rail-split-pane::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.rail-split-pane {
+  overflow: hidden !important;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.md .rail-split-pane .side-menu {
+  overflow-y: none;
+
+  --side-width: 72px;
+  --side-max-width: 72px;
+  --side-min-width: 72px;
+}
+
+.ios .rail-split-pane .side-menu {
+  --side-width: 72px;
+  --side-max-width: 72px;
+  --side-min-width: 72px;
+}
+
+.rail-split-pane .buttons ion-button {
+  width: 72px;
+  height: 72px;
+  margin: 0;
+}
+
+.md .buttons-first-slot {
+  padding-left: 8px;
+}
+
+.side-menu ion-button ion-icon {
+  display: block;
+  font-size: 22px !important;
+}
+
+.side-menu ion-button ion-label {
+  display: block;
+  font-size: 11px !important;
+}
+
+.rail-split-pane ion-button#large {
+  width: 64px;
+  height: 64px;
+}
+
+.rail-split-pane ion-fab {
+  padding-top: 8px;
+}
+
+.large-buttons {
+  margin: 0 auto;
+  width: 64px;
+}
+
+.code-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

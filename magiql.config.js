@@ -5,7 +5,7 @@ module.exports = {
   extensions: ["ts", "tsx", "js", "jsx", "graphql"],
   quiet: false,
   watch: true,
-  runWithBabel: false,
+  runWithBabel: true,
   language: "typescript",
   include: ["**"],
   exclude: ["**/node_modules/**", "**/__mocks__/**", `**/generated/**`],
